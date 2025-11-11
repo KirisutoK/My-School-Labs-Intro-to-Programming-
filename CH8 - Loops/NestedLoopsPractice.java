@@ -17,6 +17,10 @@ public class NestedLoopsPractice {
         Practice8();
         System.out.println(" ");
         Practice9();
+        System.out.println(" ");
+        Practice10();
+        System.out.println(" ");
+        Practice11();
     }
 
     public static void Practice1() {
@@ -99,14 +103,40 @@ public class NestedLoopsPractice {
 
         for (int i = 1; i <= 5; i++) {
             for (int a = 0; a < as; a++) {
-                System.out.println("A");
+                System.out.print("A");
             }
-            for (int b = 0; b < bs ; b++) {
-                System.out.println("B");
+            for (int b = 0; b < bs; b++) {
+                System.out.print("B");
             }
 
             as--;
             bs++;
+            System.out.println(" ");
+        }
+    }
+
+    public static void Practice10() {
+        for (int row = 1; row <= 5; row++) {
+            for (int i = 1; i <= row; i++) {
+                System.out.print(" ");
+            }
+
+            for (int col = 5; col <= 9; col++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void Practice11() {
+        for (int row = 1; row <= 5; row++) {
+            for (int i = 1; i <= row; i++) {
+                System.out.print(" ");
+            }
+            for (int col = 5; col >= row; col--) {
+                System.out.print("*");
+            }
             System.out.println();
         }
     }
